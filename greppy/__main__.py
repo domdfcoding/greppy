@@ -36,7 +36,7 @@ from consolekit import click_command
 # this package
 from greppy import greppy
 
-__all__ = ["cli"]
+__all__ = ["main"]
 
 
 @click.argument("pattern", type=click.STRING)
@@ -49,14 +49,23 @@ __all__ = ["cli"]
 		metavar="DIRECTORY",
 		)
 @click.option("-s", "--summary", is_flag=True, default=False, help="Show a summary of the results.")
+@click.option("-i", "--ignore-case", is_flag=True, default=False, help="Ignore case.")
 @click_command()
-def cli(pattern, dir: str = '.', summary: bool = False):
+def main(pattern, dir: str = '.', summary: bool = False, ignore_case: bool = False):
 	"""
 	Recursively grep over Python files in the files in the given directory, and search for PATTERN.
 	"""
 
-	greppy(pattern, dir, summary)
+	# stdlib
+	import re
+
+	flags = 0
+
+	if ignore_case:
+		flags |= re.IGNORECASE
+
+	greppy(re.compile(pattern, flags), dir, summary)
 
 
 if __name__ == "__main__":
-	sys.exit(cli())
+	sys.exit(main())

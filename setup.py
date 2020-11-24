@@ -13,7 +13,7 @@ sys.path.append('.')
 from __pkginfo__ import *  # pylint: disable=wildcard-import
 
 setup(
-		description='Recursively grep over Python files in the files in the given directory.',
+		description="Recursively grep over Python files in the files in the given directory.",
 		extras_require=extras_require,
 		install_requires=install_requires,
 		py_modules=[],
