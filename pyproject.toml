@@ -9,9 +9,11 @@ description = "Recursively grep over Python files in the files in the given dire
 readme = "README.rst"
 keywords = []
 dynamic = [ "requires-python", "classifiers", "dependencies",]
+
 [[project.authors]]
 email = "dominic@davis-foster.co.uk"
 name = "Dominic Davis-Foster"
+
 
 [project.license]
 file = "LICENSE"
@@ -32,5 +34,5 @@ always = [ "greppy", "greppy.__main__",]
 base-classifiers = [ "Typing :: Typed",]
 python-versions = [ "3.6", "3.7", "3.8", "3.9",]
 python-implementations = [ "CPython", "PyPy",]
-platforms = [ "Windows", "macOS", "Linux",]
+platforms = [ "Linux", "macOS",]
 license-key = "MIT"

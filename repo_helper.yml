@@ -13,6 +13,10 @@ enable_conda: false
 on_pypi: false
 use_whey: true
 
+platforms:
+ - Linux
+ - macOS
+
 python_versions:
  - 3.6
  - 3.7

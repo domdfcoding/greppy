@@ -33,7 +33,7 @@ from typing import IO, Pattern, Set, Union
 
 # 3rd party
 import click
-from domdf_python_tools.paths import PathPlus
+from domdf_python_tools.paths import PathPlus, unwanted_dirs
 from domdf_python_tools.typing import PathLike
 from domdf_python_tools.words import Plural
 from rich.console import Console
@@ -77,7 +77,7 @@ def greppy(
 	match_count = 0
 	searched_files = 0
 
-	for filename in PathPlus(search_dir).iterchildren(match="**/*.py"):
+	for filename in PathPlus(search_dir).iterchildren(exclude_dirs=(*unwanted_dirs, ".hg"), match="**/*.py"):
 
 		if filename.suffix != ".py":  # pragma: no cover
 			continue
@@ -88,7 +88,7 @@ def greppy(
 
 		try:
 			lines = filename.read_lines()
-		except UnicodeDecodeError as e:
+		except (UnicodeDecodeError, PermissionError, IsADirectoryError) as e:
 			click.echo(f"Error reading {filename.as_posix()}: {e}", err=True)
 			continue
 

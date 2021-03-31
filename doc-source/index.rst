@@ -4,7 +4,7 @@ greppy
 
 .. start short_desc
 
-**Recursively grep over Python files in the files in the given directory.**
+.. documentation-summary::
 
 .. end short_desc
 
@@ -19,7 +19,7 @@ greppy
 		* - Docs
 		  - |docs| |docs_check|
 		* - Tests
-		  - |actions_linux| |actions_windows| |actions_macos| |coveralls|
+		  - |actions_linux| |actions_macos| |coveralls|
 		* - Activity
 		  - |commits-latest| |commits-since| |maintained|
 		* - QA
@@ -38,10 +38,6 @@ greppy
 	.. |actions_linux| actions-shield::
 		:workflow: Linux
 		:alt: Linux Test Status
-
-	.. |actions_windows| actions-shield::
-		:workflow: Windows
-		:alt: Windows Test Status
 
 	.. |actions_macos| actions-shield::
 		:workflow: macOS

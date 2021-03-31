@@ -18,7 +18,7 @@ greppy
 	* - Docs
 	  - |docs| |docs_check|
 	* - Tests
-	  - |actions_linux| |actions_windows| |actions_macos| |coveralls|
+	  - |actions_linux| |actions_macos| |coveralls|
 	* - Activity
 	  - |commits-latest| |commits-since| |maintained|
 	* - QA
@@ -37,10 +37,6 @@ greppy
 .. |actions_linux| image:: https://github.com/domdfcoding/greppy/workflows/Linux/badge.svg
 	:target: https://github.com/domdfcoding/greppy/actions?query=workflow%3A%22Linux%22
 	:alt: Linux Test Status
-
-.. |actions_windows| image:: https://github.com/domdfcoding/greppy/workflows/Windows/badge.svg
-	:target: https://github.com/domdfcoding/greppy/actions?query=workflow%3A%22Windows%22
-	:alt: Windows Test Status
 
 .. |actions_macos| image:: https://github.com/domdfcoding/greppy/workflows/macOS/badge.svg
 	:target: https://github.com/domdfcoding/greppy/actions?query=workflow%3A%22macOS%22
