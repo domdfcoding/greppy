@@ -4,7 +4,7 @@ greppy
 
 .. start short_desc
 
-**Recursively grep over Python files in the files in the given directory.**
+.. documentation-summary::
 
 .. end short_desc
 

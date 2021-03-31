@@ -35,7 +35,7 @@ repos:
     - id: bind-requirements
 
  - repo: https://github.com/domdfcoding/flake8-dunder-all
-   rev: v0.1.5
+   rev: v0.1.7
    hooks:
     - id: ensure-dunder-all
       files: ^greppy/.*\.py$
@@ -54,7 +54,7 @@ repos:
     - id: rst-inline-touching-normal
 
  - repo: https://github.com/asottile/pyupgrade
-   rev: v2.10.0
+   rev: v2.11.0
    hooks:
     - id: pyupgrade
       args:
@@ -74,7 +74,7 @@ repos:
       exclude: ^(doc-source/conf|__pkginfo__|make_conda_recipe|setup)\.(_)?py$
 
  - repo: https://github.com/domdfcoding/dep_checker
-   rev: v0.5.0
+   rev: v0.6.0
    hooks:
     - id: dep_checker
       args:
