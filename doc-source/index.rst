@@ -5,6 +5,7 @@ greppy
 .. start short_desc
 
 .. documentation-summary::
+	:meta:
 
 .. end short_desc
 
@@ -51,7 +52,8 @@ greppy
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| requires-io-shield::
+	.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/greppy/badge.svg
+		:target: https://dependency-dash.herokuapp.com/github/domdfcoding/greppy/
 		:alt: Requirements Status
 
 	.. |coveralls| coveralls-shield::
@@ -76,7 +78,7 @@ greppy
 		:last-commit:
 		:alt: GitHub last commit
 
-	.. |maintained| maintained-shield:: 2021
+	.. |maintained| maintained-shield:: 2022
 		:alt: Maintenance
 
 .. end shields
@@ -105,12 +107,18 @@ Installation
 	contributing
 	Source
 
+.. sidebar-links::
+	:caption: Links
+	:github:
+
+
+
 .. start links
 
 .. only:: html
 
 	View the :ref:`Function Index <genindex>` or browse the `Source Code <_modules/index.html>`__.
 
-	`Browse the GitHub Repository <https://github.com/domdfcoding/greppy>`__
+	:github:repo:`Browse the GitHub Repository <domdfcoding/greppy>`
 
 .. end links
