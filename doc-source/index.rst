@@ -52,8 +52,8 @@ greppy
 		:workflow: mypy
 		:alt: mypy status
 
-	.. |requires| image:: https://dependency-dash.herokuapp.com/github/domdfcoding/greppy/badge.svg
-		:target: https://dependency-dash.herokuapp.com/github/domdfcoding/greppy/
+	.. |requires| image:: https://dependency-dash.repo-helper.uk/github/domdfcoding/greppy/badge.svg
+		:target: https://dependency-dash.repo-helper.uk/github/domdfcoding/greppy/
 		:alt: Requirements Status
 
 	.. |coveralls| coveralls-shield::
