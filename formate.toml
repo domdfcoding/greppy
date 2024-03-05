@@ -49,5 +49,5 @@ known_third_party = [
     "requests",
     "rich",
 ]
-known_first_party = "greppy"
+known_first_party = [ "greppy",]
 line_length = 115
