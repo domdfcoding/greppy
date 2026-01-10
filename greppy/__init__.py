@@ -125,7 +125,7 @@ def greppy(
 	if match_count:
 		echo(
 				f"{match_count} {_match(match_count)} in {len(matching_files)} "
-				f"files (searched {searched_files} files)."
+				f"files (searched {searched_files} files).",
 				)
 	else:
 		echo(f"No matches across {searched_files} files.")
